@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper{
+    width: 1440px;
+    background-color: white;
+}
+.header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 120px;
+}
+.eng{
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.logo{
+    margin-left: 600px;
+    width: 238px;
+    height: 54px;
+}
+.navigation{
+    height: 28px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+.main-text{
+    padding-left: 120px;
+    margin-top: 70px;
+}
+.Chapter{
+    margin-bottom: 50px;
+}
+.title1,.title2, .title3, .title4 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    font: bold;
+}
+
+.title1:after {
+    content:'Chapter 1';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title2:after {
+    content:'Chapter 2';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title3:after {
+    content:'Chapter 3';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title4:after {
+    content:'Chapter 4';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.text{
+    margin-top: 40px;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;  
+   width: 1200px;
+}
+.text span {
+   text-decoration: underline;
+}
+mark{
+    background-color: #DADADA;
+}

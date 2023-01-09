@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper{
+    width: 1440px;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 120px;
+    position: fixed;
+   
+   
+}
+.eng{
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.logo{
+    margin-left: 700px;
+    width: 238px;
+    height: 54px;
+}
+.navigation{
+    height: 28px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+.main-text{
+  width: 780px;
+    margin-top: 100px;
+
+}
+
+.container{
+    display: flex;
+    padding-left: 120px;
+    width: 1440px;
+}
+
+.side-bar{
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 580px;
+    height: 462px;
+    margin-right: 30px;
+    position: sticky;
+    bottom: 0;
+    top: 95px;
+   
+}
+.title{
+  
+    font-family: 'Francois One';
+    /* font-weight: 400; */
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    /* position: relative; */
+   font-weight: bold;
+}
+hr{
+   margin-bottom: 70px;   
+}
+.Chapter{
+    margin-bottom: 50px;
+}
+.title1,.title2, .title3, .title4 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+   font-weight: bold;
+
+}
+
+.title1:after {
+    content:'Chapter 1';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title2:after {
+    content:'Chapter 2';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title3:after {
+    content:'Chapter 3';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.title4:after {
+    content:'Chapter 4';
+    position: absolute;
+    bottom:30px;
+    font-family: 'Farro';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.text{
+    margin-top: 40px;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;  
+   /* width: 500px; */
+}
+.text span {
+   text-decoration: underline;
+}
+mark{
+    background-color: #DADADA;
+}
+.vector{
+    width: 700px;
+    position: fixed;
+    top: 90px;
+   left: 1000px;
+    height: 700px;
+    background-image: url(./Vector\ \(1\).svg);
+    
+}
