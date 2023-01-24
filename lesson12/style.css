@@ -10,10 +10,7 @@
     flex-direction: column;
     transition: 0.5s;
     justify-content: center;
-    align-items: center;
-   
- 
-    
+    align-items: center; 
 }
 .h3{
     width: 644px;
@@ -22,10 +19,8 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
- 
     letter-spacing: 0.05em;
     color: #000000;
-  
     margin: 120px auto 80px;
     text-align: center;
 }
@@ -34,9 +29,6 @@
     grid-template-columns: 370px 370px 370px;
     grid-template-rows: 370px 370px 370px;
     grid-gap: 30px;
-
-
-
 }
 
 .section-a > div, .section-b > img, .section-c > img {

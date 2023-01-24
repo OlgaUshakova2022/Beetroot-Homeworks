@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Farro&family=Francois+One&family=Montserrat:wght@400;700&family=Roboto&family=Roboto+Condensed:wght@300&family=Staatliches&family=Tourney:wght@100;400;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main-forms">
+        <form class="form">
+            <h1 class="name-form">Create an Account</h1>
+            <div class="box-name">
+                <label class="label-name" for="" >
+                    <h4>First Name</h4>
+                    <input  class="input-first-name" type="text" name="First Name"  value="" placeholder="" required >
+                </label>
+                <label class="label-name" for="">
+                    <h4>Last Name</h4>
+                    <input class="input-last-name"type="text" name="Last Name"  value="" placeholder="" required>
+                </label>
+            </div>
+            <label class="label-e-mail" for="">
+                <h4>E-mail</h4>
+                <input class="input-last-e-mail" type="email" name="E-mail" value="" placeholder="">
+                <span class="bottom-text">We'll never share your email with anyone else.</span>
+            </label>
+            <label class="label-radio" for="">
+                <input class="input-ragio" type="radio" name="стать" value="чоловік"> 
+                <h4>Male</h4>
+                <input class="input-ragio" type="radio" name="стать" value="жінка"> 
+                <h4>Female</h4>
+            </label>
+            <div class="box-address">
+                <label class="label-address" for="">
+                    <h4>Country</h4>
+                    <select class="input-address input-address-icon"name="Country" value="" >
+                        <option selected value="">Ukraine</option>
+                        <option value="">USA</option>
+                        <option value="">Kazakhstan</option>
+                    </select>
+                </label>
+                <label class="label-address" for="">
+                    <h4>City</h4>
+                    <input class="input-address"type="text" name="City" value="" placeholder="">
+                </label>
+            </div>
+            <button class="button-SignUp" type="submit">Sign Up</button>
+            <div class="text">
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our  <span>Terms of Use</span>  
+                    and  <span>Privacy Policy.</span> 
+                </p>
+            </div>
+            <hr>
+            <div class="Log-In">
+                <h4>Have an account?</h4>
+                 <h3>
+                    <a href="https://lms.beetroot.academy/myCourses" target="">Log In</a> 
+                 </h3> 
+           </div>
+            
+        </form>
+        <form class="form">
+            <h1 class="name-form">Profile</h1>
+            <div>
+                <img src="./IMG/📷 Image.jpg" alt="photo">
+                <button  class="button-photo" type="file"> 
+                    <input type=" file" name="photo" value="img" placeholder=""> 
+                        <img src="./IMG/Photo Camera.svg" alt="Photo Camera"> 
+                </button> 
+                <button  class="button-photo-trash" type="submit"> <img src="./IMG/Trash.svg" alt="Trash"></button>
+                <span class="bottom-text bottom-text-form2">Up to 1 MB (300x300 px)</span>
+            </div>
+            <div class="box-name">
+                <label class="label-name" for="">
+                    <h4>Name</h4>
+                    <input  class="input-name" type="text">
+                </label>
+                <label class="label-name" for="">
+                    <h4>E-mail</h4>
+                    <input class="input-name"type="text">
+                </label>
+            </div>
+            <div class="box-address">
+                <label class="label-address" for="">
+                    <h4>Country</h4>
+                    <select class="input-address input-address-icon" name="" id="" placeholder="select">
+                        <option value="">Ukraine</option>
+                        <option value="">USA</option>
+                        <option value="">Kazakhstan</option>
+                        
+                    </select>
+                </label>
+            
+                <label class="label-address" for="">
+                    <h4>City</h4>
+                    <input class="input-address"type="text">
+                </label>
+            </div>
+            <div class="box-phone">
+                <label class="label-name" for="">
+                    <h4>Zip Code</h4>
+                    <input  class="input-name" type="text">
+                </label>
+                <label class="label-name" for="">
+                    <h4>Phone Number</h4>
+                    <input class="input-name" type="number">
+                </label>
+            </div>
+            <button class="button-update">Update</button>
+        </form>
+    </main>
+</body>
+</html>

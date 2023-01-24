@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-forms{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1440px;
+    height: 700px;
+    background: #F7F7F7;
+}
+
+.form{
+     margin-top: 55px;
+    padding-left: 35px;
+    width: 570px;
+    height: 590px;
+    margin-right: 30px;
+    background: white;
+   
+}
+.form h1{
+     margin-top: 35px;
+    margin-bottom: 20px;
+    height: 32px;
+    width: 199px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+   
+}
+.form h4,h3{
+   font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454; 
+}
+
+.box-name, .box-address, .box-phone{
+    display: flex;
+}
+.label-name, .input-address{
+    margin-right: 12px;
+    padding: 0px 5px 0px 5px;
+    
+}
+
+.input-first-name, .input-last-name, .input-address, .input-name{
+     margin-top: 7px;
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    appearance: none;
+}
+.input-first-name{
+   border: 1px solid #007BFF ;
+}
+
+
+.label-e-mail h4, .label-address, .box-phone{
+    margin-top: 20px;
+}
+.input-last-e-mail{
+    margin-top: 7px;
+    width: 500px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    
+}
+/* !НЕ отрабатывается. */
+.input-address-icon::after {
+    content:'';
+    display: block;
+    width: 2px;
+    height: 2px;
+    background-image: url(./IMG/🔹\ Icon\ 1Color.svg);
+    background-repeat: no-repeat;  
+}
+
+.bottom-text{
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+
+}
+.label-radio h4{
+    display: inline;
+    margin-right: 20px;
+}
+.input-ragio{
+    margin-right: 8px;
+}
+.button-SignUp{ 
+    margin-top: 28px;
+    margin-bottom: 22px;
+    width: 500px;
+    height: 38px;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    color: white;
+   
+}
+.text{
+    width: 410px;
+    height: 36px;
+    text-align: center;
+    }
+
+.text span{    
+    color: #007BFF ;
+}
+.text p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+    padding-left: 81px;
+}
+hr{
+    width: 500px;
+    height: px;
+    background: #E4E4E4;
+    margin-top: 20px;
+}
+.Log-In {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+.Log-In a{
+    margin-left: 20px;
+    margin-right: 80px;
+    color: #007BFF;
+    text-decoration: none;
+}
+.button-photo{
+    position: relative;
+    margin-left: 20px;
+    width: 138px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px; 
+    cursor: pointer; 
+}
+.button-photo input {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    width: 0px;
+    height: 0;
+    border: none;
+}
+.button-photo img{
+    padding-left: 85px;
+    padding-bottom: 50px;
+}
+.bottom-text-form2{
+    position: absolute;
+    right: 445px;
+    top: 175px;
+}
+.button-photo-trash{
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    
+}
+.button-photo-trash img{
+    margin-bottom: 50px;
+   
+}
+.button-update{
+    margin-top: 28px;
+    margin-bottom: 22px;
+    width: 150px;
+    height: 38px;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    color: white;
+    
+}
+input:focus{
+    background: #007BFF;
+    opacity: 0.4;
+}
+button:focus{ 
+    background: #007BFF;
+    opacity: 0.4;
+}
+select:focus{
+    background: #007BFF;
+    opacity: 0.4; 
+}

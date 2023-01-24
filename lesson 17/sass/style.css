@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contaner {
+  width: 1440px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.content .content--information .content--description, .content .content--information .content--position, .content .content--information .content--name, .header .header--title, .header .header--description {
+  text-align: center;
+}
+
+.content .content--information .content--links, .content .content--information, .content .content--photo, .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 1440px;
+  height: 21.5%;
+}
+.header .header--description {
+  position: relative;
+  margin: 121px 568px 30px 568px;
+  font-family: "$font2";
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #898F8F;
+}
+.header .header--title {
+  position: relative;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+.header .header--title::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 485px;
+  display: block;
+  width: 210px;
+  height: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFCC00;
+}
+.header .header--title::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 735px;
+  display: block;
+  width: 210px;
+  height: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFCC00;
+}
+.header .header--icon {
+  display: block;
+  position: absolute;
+  top: 270px;
+  left: 712px;
+  background-image: url(./bonfire-sharp\ 1.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 560px;
+}
+.content .content--photo {
+  width: 50%;
+}
+.content .content--photo img {
+  width: 430px;
+  height: 430px;
+}
+.content .content--information {
+  flex-direction: column;
+  width: 50%;
+  height: 560px;
+  padding: 85px;
+  border-left: 1px solid #FFCC00;
+}
+.content .content--information .content--name {
+  position: relative;
+  margin-bottom: 60px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #666666;
+}
+.content .content--information .content--name::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 55px;
+  display: block;
+  width: 100px;
+  height: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFCC00;
+}
+.content .content--information .content--position {
+  width: 283px;
+  height: 28px;
+  margin-bottom: 30px;
+  font-family: "$font2";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+}
+.content .content--information .content--links a {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 30px 5px;
+}
+.content .content--information .content--description {
+  width: 430px;
+  height: 116px;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.content .content--information .content--decore {
+  width: 50px;
+  height: 4px;
+  margin-top: 20px;
+}
+.content .content--information .content--button {
+  margin-top: 30px;
+  padding: 5px 10px;
+  width: 120px;
+  height: 24px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #666666;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFCC00;
+}/*# sourceMappingURL=style.css.map */
