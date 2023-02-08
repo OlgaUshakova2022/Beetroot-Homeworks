@@ -1,0 +1,721 @@
+@use"_normalize";
+
+// Шаблоны 
+%displayflexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// общие стили-------------------------------------------------
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;  
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+.ibg{
+    position: relative;
+}
+.ibg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+// header-----------------------------------------------------------
+.header{
+    position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 20;
+   background-color: white;
+}
+.header::before{
+    content: '';
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-color: white;
+}
+.header__burger{
+    display: none;
+}
+@media (max-width: 320px), (max-width: 768px) {
+    .header__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 3;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #000000;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+    }
+    .header__burger::after,
+    .header__burger::before{
+        content: '';
+        position: absolute;
+       background-color: #000000;
+       width: 100%;
+       height: 2px;
+       left: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header::before{
+        display: block;  
+    }
+ }   
+                    @media (max-width: 768px){
+                        .header__search {
+                            margin-left: 460px;
+                            margin-right: 40px;
+                        }
+                    }
+
+                    @media (max-width: 320px){
+                        .header__search {
+                            margin-left: 80px;
+                            margin-right: 20px;
+                        }
+                    }
+
+.header__body {
+   display: flex;
+   align-items: center;
+   min-height: 100px;  
+}
+
+.header__nav{
+margin-left: 385px;
+margin-right: 70px;
+
+}
+
+.nav {
+    padding: 30px 0;
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child){
+    margin: 0px 42px 0px 0px;
+    }
+    &__link {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 121.4%;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+}
+
+.header__search, .header__logo{
+position: relative;
+z-index: 3;
+}
+
+// --------main------------------------------------
+.main {
+    flex: 1 1 auto;
+    margin-top: 100px;
+    }
+// ---------------------main1-----------------
+.main1 {
+    position: relative;
+    overflow: hidden;
+
+    @media  (max-width: 768px){
+        .main1 {
+        max-height: 320px;
+        }
+    }
+    &__title {
+        position: relative;
+        z-index: 2;
+        padding: 100px 0px 380px  0px;
+        display: block;   
+        font-family: 'Red Hat Display';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 133%;
+        letter-spacing: 0.05em;
+        color: #000000;  
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-position: bottom;
+    }
+            @media  (max-width: 768px){
+                &__title {
+                padding-top: 30px;
+                    font-size: 36px;
+                        }
+            }
+            @media  (max-width: 320px){
+                &__title {
+                padding-top: 70px;
+                    font-size: 30px;
+                        }
+            }           
+}
+// -----------------------blog-----------------------------------
+.title {
+    margin-top: 90px;
+    margin-bottom: 50px;
+   font-family: 'Red Hat Display';
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 133%;
+   letter-spacing: 0.05em;
+   color: #000000;
+   
+   @media  (max-width: 768px){
+    & {
+        margin-top: 70px;
+            }
+}
+   @media  (max-width: 320px){
+    & {
+       
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-top: 70px;
+            }
+}
+}
+// ------------------main2-------main3--------------------------------------------------
+.main2__body{
+    margin-bottom: 30px;
+}
+.body {
+display: flex;
+}
+
+@media (max-width: 320px) {
+    .revers {
+  flex-wrap: wrap-reverse;
+    }
+}
+@media (max-width: 320px) {
+    .wrap {
+  flex-wrap: wrap;
+    }
+}
+.left {
+    width: 570px;
+    margin-right: 30px;
+    padding-left: 30px;
+
+    @media (max-width: 320px) {
+        & {
+            padding-left: 0px;
+            margin-right: 0px;
+        }
+    }
+}
+.body__right{
+    display: flex;
+    flex-direction: column;
+    width: 540px;  
+}
+
+.right__subtitle, .right__data{   
+font-family: 'Lato';
+font-weight: 400;
+font-size: 16px;
+line-height: 166%;
+letter-spacing: 0.1em;
+color: #7B7B7B;
+}
+
+.right__title{
+    margin: 30px 0px 15px 0px;
+font-family: 'Red Hat Display';
+font-weight: 500;
+font-size: 23px;
+line-height: 166%;
+letter-spacing: 0.1em;
+color: #000000;
+
+    @media (max-width: 320px) {
+        &__title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.right__text{
+    margin-top: 50px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+@media (max-width: 768px) {
+    &__text {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 320px) {
+    &__text {
+        
+        margin-top: 40px;
+        margin-bottom: 37px;
+    }
+}
+.left__img{
+   width: 100%;
+    // height: 280px; 
+}
+.left__img img{
+    width: 100%;
+    height: 100%;
+    // object-fit: cover;
+}
+// --------------дополнительные отступы к main2--main3-----------------------
+.additional--padding{
+    padding-left: 120px;  
+}
+@media (max-width: 768px), (max-width: 320px) {
+    .additional--padding {
+  padding-left: 5px;
+    }
+}
+.additional--margin{
+    margin-left: 30px;
+}
+@media (max-width: 320px) {
+     .additional--margin{
+  margin-left: 0px;
+    }
+}
+
+.right__subtitle--margin{
+    margin-top: 85px;
+}
+@media (max-width: 768px) {
+    .right__subtitle--margin {
+  margin-top: 0px;
+    }
+}
+@media (max-width: 320px) {
+    .right__subtitle--margin {
+  margin-top: 50px;
+    }
+}
+// ----------------------------main4----------------------------
+.subtitle__main4 {
+display: flex;
+align-items: center;
+margin-top: 95px;
+margin-bottom: 50px;
+
+@media (max-width: 320px) {
+    & {
+        display: block;
+        margin-top: 70px;
+   }
+}
+}
+.main4__subtitle{
+    
+font-family: 'Red Hat Display';
+font-weight: 600;
+font-size: 28px;
+line-height: 166%;
+letter-spacing: 0.1em;
+color: #000000;
+}
+.main4__subtext{
+    position: relative;
+    margin-right: 43px;
+    margin-left: 808px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+    &::after{
+        content: url(./img/Arrow\ 2.svg);
+        position: absolute;
+        left: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .main4__subtext {
+ margin-left: 400px;
+   }
+}
+@media (max-width: 320px) {
+    .main4__subtext {
+ margin-left: 0px;
+   }
+}
+// ----------------------main5---------------------------------
+.main5, .main7{
+    display: flex;
+}   
+   
+    @media  (max-width: 768px){
+    .main5 {
+                flex-wrap: wrap;
+            
+            }
+}
+
+.main5__card:not(:last-child){
+    margin: 0px 30px 0px 0px;
+}
+.main7__card:not(:last-child){
+    margin: 0px 30px 0px 0px;
+}
+@media  (min-width: 320px) and (max-width: 768px) {
+        .main5__card {
+                    display: flex;
+                    
+                }
+                .main5__card:not(:last-child){
+                    margin: 0px 30px 30px 0px;
+                }
+                .main5__card img {
+                    width: 340px;
+                    height: 240px;
+                }
+    }
+    @media  (min-width: 320px) and (max-width: 768px) {
+       
+                .main7__card:not(:last-child){
+                    margin: 0px 30px 30px 0px;
+                }
+                .main7__card img {
+                    width: 340px;
+                    height: 240px;
+                }
+    }
+
+    @media  (max-width: 320px)  {
+        .main7 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+ @media  (max-width: 320px)  {        
+        
+        .main7__card:not(:last-child){
+            margin: 0px 30px 30px 0px;
+        }
+        .main7__card img {
+            width: 300px;
+            height: 150px;
+        }
+}
+    @media  (min-width: 320px) and (max-width: 768px) {
+        .revers2 {
+                    display: flex;
+                    flex-direction: row-reverse;
+                
+                }
+    } 
+    @media  (min-width: 320px) and (max-width: 768px) {
+        .main__card--div {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                
+                }
+    } 
+    
+
+.main5__subtitle, .main7__subtitle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+display: flex;
+justify-content: space-between;
+}
+@media  (min-width: 320px) and (max-width: 768px) {
+    .main5__subtitle {
+                margin-top: 0px;
+            
+            }
+        }
+.main5__subtitle--h6, .main7__subtitle--h6  {
+    margin-bottom: 25px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+.main5__title, .main7__title{
+    margin-bottom: 20px;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+.main5__text, .main7__text{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+@media (max-width: 320px) {
+    .main5__text {
+margin-bottom: 50px;
+   }
+}
+.main5__card, .main7__card{
+    width: 100%;
+}
+// -------------------main6---------------------------------------------------
+.main6__subtext{
+    margin-left: 750px;
+
+@media (max-width: 768px) {
+    & {
+        margin-left: 322px;
+   }
+}
+@media (max-width: 320px) {
+    & {
+ margin-left: 0px;
+   }
+}
+}
+// <!-- ----------------------------------buttom-------------------------- -->
+.main__buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 46px;
+    background: #565656;
+    margin: 50px auto 90px;
+}
+.main__buttom a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+// -------------------------------main8------------------------------------
+
+.main8{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+@media  (min-width: 320px) and (max-width: 768px) {
+    & {
+              flex-direction: column;
+      justify-content: space-around;
+            
+            }
+        }
+    }
+
+@media (max-width: 320px) {
+    & {
+ flex-direction: column;
+   }
+}
+
+.main8__full{
+    width: 45%;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    &::after{
+        content: url(./img/Arrow\ 2.svg);
+        position: absolute;
+        left: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .main8__full {
+width: 100%;
+margin-bottom: 50px;
+   }
+}
+.main8__text{
+    width: 45%;
+}
+@media (max-width: 768px) {
+    .main8__text {
+width: 100%;
+
+   }
+}
+.main8__text p{
+    margin-bottom: 50px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+@media  (min-width: 320px) and (max-width: 768px) {
+    .main8__text p {
+      text-align: right;
+            
+            }
+        }
+
+// ----------------------------------fotter--------------------------------------
+.fotter{
+    background: #F4F4F4;
+}
+.fotter__body{
+display: flex;
+justify-content: space-between;
+
+}
+@media (max-width: 768px) {
+    .fotter__body {
+display: block;
+   }
+}
+.fotter__body--left{
+width: 45%;
+}
+@media (max-width: 768px) {
+    .fotter__body--left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+width: 100%;
+
+   }
+}
+.fotter__body--left h2{
+    margin: 70px 0px 30px 0px;
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(64/48*100%);
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+@media (max-width: 768px) {
+    .fotter__body--left h2 {
+font-size: 32px;
+   }
+}
+.fotter__body--left span{
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+
+.fotter__body--right{
+   margin-top: 125px;
+}
+@media (max-width: 768px) {
+    .fotter__body--right {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 46px;
+margin-bottom: 40px;
+   }
+}
+
+.link-icon:not(:last-child){
+    margin: 0px 25px 0px 0px;
+}
+.svg-icon{
+    width: 50px;
+    height: 50px;
+    fill:#565656;
+   
+    
+}
+// !не працює
+.svg-icon:hover  path{
+    fill: white;
+    
+    
+    } 
+    .fotter__manifest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    @media (max-width: 768px) {
+        .fotter__manifest {
+    
+ padding: 0% 20% 0% 20%;
+       }
+    }
+    .fotter__manifest h6{
+        
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
