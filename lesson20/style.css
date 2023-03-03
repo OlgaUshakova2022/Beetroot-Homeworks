@@ -49,20 +49,6 @@ body {
   box-sizing: content-box;
 }
 
-.ibg {
-  position: relative;
-}
-
-.ibg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .case {
   margin: 18px 0px 38px 0px;
   font-family: "Lato";

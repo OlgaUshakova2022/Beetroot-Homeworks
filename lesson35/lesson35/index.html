@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>   
+ 
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>Список песен.</h2>
+        <button class="btn btn-show-songs" type="button">Показать</button>
+        <button class="btn btn-hide-songs hide" type="button">Спрятать</button>
+        <ol class="songs-list"></ol>
+    </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+    <div class="form-box">
+        <h2>Модальное окно</h2>
+        <button class="btn btn-show-songs" onclick="openPopup()" type="button">Открыть</button>
+    </div>
+
+    <div class="popup-bg"></div>
+    <div class="popup">
+        <div class="popup-close" onclick="openPopup()"></div>     
+    </div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
