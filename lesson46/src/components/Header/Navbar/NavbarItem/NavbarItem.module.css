@@ -1,0 +1,15 @@
+.navbarItem{
+   display: flex;
+   height: 40px;
+justify-content: flex-start;
+  
+}
+.navbarItemLogo{
+    text-decoration: none;
+}
+.navbarItemTitle {
+    text-decoration: none;
+    margin-left: 80px;
+   
+
+}

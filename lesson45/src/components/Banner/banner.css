@@ -1,0 +1,9 @@
+.App-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1177px;
+    height: 145px;
+    background: #D9D9D9;
+    margin-bottom: 25px;
+}

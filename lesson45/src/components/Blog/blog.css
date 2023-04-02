@@ -1,0 +1,38 @@
+.App-blog{
+    display: flex;
+}
+.App-blog-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+    height: 437px;
+    background: #D9D9D9;
+    padding: 25px;
+    margin-right: 65px;
+    gap: 27px;
+}
+
+.App-blog-item{
+    width: 759px;
+    height: 70px;
+    background: #F9D7D7;
+ 
+}
+.App-blog-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 437px;
+    background: #D9D9D9;
+    padding: 25px;
+    gap: 9px;
+}
+.App-blog-right-item{
+    width: 247px;
+    height: 110px;
+    background: #BDCDF7;
+}

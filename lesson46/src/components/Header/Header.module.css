@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 80px;
+    background-color: blue;
+  
+}
+.header a{
+    color: aliceblue;
+    margin-right: 25px;
+}
+.span {
+    font-size: 38px;
+    color: aliceblue
+}

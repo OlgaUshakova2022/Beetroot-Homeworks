@@ -1,0 +1,54 @@
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0a5a5;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #150b0b;
+}
+#p1{
+  width: 350px;
+  font-family: monospace;
+  font-size: 24px;
+  border: 1px solid;
+}
+.div2{
+  width: 350px;
+  font-family: monospace;
+  font-size: 24px;
+  border: 1px solid;
+}
+.img{
+  width: 400px;
+  height: 400px;
+}
+.div-input{
+position: absolute;
+top: 70px;
+right: 800px;
+}
+.div-input input{
+width: 200px;
+
+}
+
+
+
+
+
+
+

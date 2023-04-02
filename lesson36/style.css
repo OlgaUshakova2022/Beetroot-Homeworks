@@ -1,3 +1,123 @@
-.autos{
-display: flex;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: snow;
+    text-align: center;
+    margin: 40px 0 50px;
+}
+
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+    color: #333;
+}
+
+.container {
+    width: 550px;
+}
+
+.form-box {
+    background-color: rgb(250, 247, 247);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-box:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.form-box p {
+    margin-bottom: 8px;
+}
+
+input {
+    width: 64px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.h-inline {
+    display: inline;
+    margin-right: 2px;
+    line-height: 1.4;
+}
+
+.inline-box {
+    margin: 16px 0 -8px 0;
+}
+
+.btn {
+    margin-left: 0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.icons {
+    width: 45px;
+}
+
+.box {
+    padding: 15px 0 5px;
+}
+
+th, td {
+    font-size: 14px;
+    color: #333;
+    padding: 15px 30px;
+}
+
+th {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    background-color: rgb(32, 203, 218);
+    cursor: pointer;
+}
+
+td {
+    background-color: rgb(15, 210, 158);
+}
+
+
+.sort-age {
+    width: 110px;
+}
+.col-age {
+    text-align: center;
 }
