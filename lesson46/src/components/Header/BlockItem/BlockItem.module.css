@@ -1,0 +1,21 @@
+
+.wrapperSpan {
+      display: flex;
+      flex-direction: column;
+      width: 220px;    
+      height: 100px;
+     background-color: aliceblue;
+      text-align: end;
+     justify-content: center; 
+}
+.wrapperItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  width: 1000px;
+  
+}
+.quantity{
+font-size: 32px;
+margin-top: 5px;
+}

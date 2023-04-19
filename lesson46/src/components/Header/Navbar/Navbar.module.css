@@ -4,3 +4,7 @@
     background-color: aqua;
     padding: 5px 25px;
 }
+.wraper{
+display: flex;
+}
+

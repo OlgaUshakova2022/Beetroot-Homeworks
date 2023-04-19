@@ -10,4 +10,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} 
+
+/* dark theme */
+html[data-theme='dark']{
+  --primary-color: #f2903b;
+  --secondary-color:#4a0e5d;
+}
+html[data-theme='light']{
+  --primary-color: #eaf078;
+  --secondary-color:#1088bf;
 }
